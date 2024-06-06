@@ -4,7 +4,7 @@ import google.generativeai as genai
 
 
 # App title
-st.set_page_config(page_title="Mapa do Sucesso📍", page_icon=":heavy_heart_exclamation_mark_ornament:")
+st.set_page_config(page_title="Alerta Saúde📍", page_icon=":heavy_heart_exclamation_mark_ornament:")
 
 
 # Initialize Gemini-Pro 
