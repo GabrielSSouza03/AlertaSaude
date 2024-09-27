@@ -78,14 +78,4 @@ if prompt := st.chat_input("Descreva sua necessidade e se possível a área méd
     # Display last 
     with st.chat_message("assistant"):
         st.markdown(response.text)
-REMEDIOS_PROIBIDOS = [
-    "remédio", "medicamento", "antibiótico", "analgésico",
-    "xarope", "dipirona", "ibuprofeno", "paracetamol",
-    "tomar", "indicar", "prescrever", "dose", "dose diária"
-]
-def filtrar_resposta(resposta):
-    for palavra in REMEDIOS_PROIBIDOS:
-        if palavra.lower() in resposta.lower():
-            return "Não fornecemos recomendações de medicamentos. Consulte um profissional de saúde."
-    return resposta
 
