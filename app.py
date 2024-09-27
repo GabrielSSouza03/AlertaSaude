@@ -19,6 +19,8 @@ safety_settings = {
     'HARASSMENT': 'BLOCK_NONE',
     'SEXUAL': 'BLOCK_NONE',
     'DANGEROUS': 'BLOCK_NONE'
+ #   'MEDICAL_ADVICE': 'BLOCK_ALL'
+
 }
 model = genai.GenerativeModel(
 model_name="gemini-1.0-pro",
