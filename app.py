@@ -79,3 +79,4 @@ if prompt := st.chat_input("Descreva sua necessidade e se possível a área méd
     with st.chat_message("assistant"):
         st.markdown(response.text)
 
+
