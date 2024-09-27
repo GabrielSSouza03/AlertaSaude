@@ -19,7 +19,7 @@ safety_settings = {
     'HARASSMENT': 'BLOCK_NONE',
     'SEXUAL': 'BLOCK_NONE',
     'DANGEROUS': 'BLOCK_NONE'
-    'MEDICAL_ADVICE': 'BLOCK_ALL' 
+    'MEDICAL_ADVICE': 'BLOCK_NONE' 
 }
 
 model = genai.GenerativeModel(
