@@ -78,11 +78,12 @@ if prompt := st.chat_input("Descreva sua necessidade e se possível a área méd
     response = st.session_state.chat.send_message(prompt) 
 
     # Filtrar a resposta para remover recomendações de medicamentos
-palavras_proibidas = {'remédio', 'medicamento', 'droga', 'farmaco', 'pílula', 'comprimido', 'xarope', 'posologia', 'prescrição', 'tratamento'}
-  if any(palavra in response.text.lower() for palavra in palavras_proibidas):
-      resposta_filtrada = "Não posso fornecer informações sobre medicamentos. Consulte um profissional de saúde."
-  else:
-      resposta_filtrada = response.text
+def filtrar_resposta(resposta):
+    palavras_proibidas = {'remédio', 'medicamento', 'droga', 'farmaco', 'pílula', 'comprimido', 'xarope', 'posologia', 'prescrição', 'tratamento'}
+    if any(palavra in resposta.text.lower() for palavra in palavras_proibidas):
+        resposta_filtrada = "Não posso fornecer informações sobre medicamentos. Consulte um profissional de saúde."
+    else:
+        resposta_filtrada = response.text
 
     
     # Display last 
